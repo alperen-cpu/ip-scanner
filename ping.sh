@@ -7,7 +7,7 @@ is_alive_ping()
   [ $? -eq 1 ] && echo $i,Down
 }
 
-for i in 12.13.14.{160..190}
+for i in 12.13.14.{160..190} #example 192.168.1.{10..20}
 do
 is_alive_ping $i & disown
 done
